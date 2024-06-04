@@ -1,0 +1,228 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+img {
+    height: 200px;
+
+}
+
+button {
+    color: aliceblue;
+    background-color: rgb(212, 33, 33);
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: rgb(114, 19, 19);
+    width: 170px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+
+}
+
+
+.rosto-mario {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.rosto-mario img {
+    height: 90px;
+    margin: 20px;
+
+}
+
+
+.rosto-mario a:hover {
+    color: rgb(199, 25, 25);
+    text-decoration: overline;
+    font-size: 25px;
+    transition: 0.5s ease-out;
+
+}
+
+
+.mario-luigi {
+    height: 500px;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-mae {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+
+
+}
+
+
+.caixa-maior {
+    width: 40%;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+}
+
+.mascara {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+
+}
+
+.whatsapp {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+
+}
+
+.whatsapp:hover {
+    height: 100px;
+}
+
+.formulario {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    position: fixed;
+    padding: 10px;
+    gap: 20px;
+    border-radius: 30px;
+    top: 30%;
+    left: -299px;
+    transition: 1s ease-in-out;
+
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(0deg, rgba(10, 9, 11, 0.9920343137254902) 0%, rgba(0, 0, 0, 0.7847514005602241) 50%);
+    width: 100vw;
+    height: 100vh;
+    transition: 1s ease-in-out;
+
+}
+
+input {
+    height: 40px;
+    padding: 10px;
+    outline-color: rgb(32, 207, 16);
+    border-radius: 10px;
+}
+
+textarea {
+    height: 150px;
+    outline-color: rgb(32, 207, 16);
+}
+
+.Pedir-Orçamento {
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(20, 172, 20);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Pedir-Orçamento:hover {
+    background-color: rgb(6, 88, 6);
+    cursor: pointer;
+    height: 90px;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+
+@media(max-width: 1100px){
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .caixa-maior {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;    
+    }
+
+    .mario-luigi{
+width: 80vw;
+height: auto;
+    }
+       
+     .rosto-mario img {
+        display: none;
+        
+     }
+
+     .rosto-mario a {
+        margin: 10px;
+        font-size: 17px;
+        font-style:inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .whatsapp{
+        right: 3px;
+     height: 50px;
+     }
+
+    
+    
+}
